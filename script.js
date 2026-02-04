@@ -44,7 +44,6 @@ document.querySelectorAll('.nav-link').forEach(link => {
 
 // ===== Navbar Scroll Effect =====
 const navbar = document.getElementById('navbar');
-let lastScroll = 0;
 
 window.addEventListener('scroll', () => {
     const currentScroll = window.pageYOffset;
@@ -54,8 +53,6 @@ window.addEventListener('scroll', () => {
     } else {
         navbar.classList.remove('scrolled');
     }
-    
-    lastScroll = currentScroll;
 });
 
 // ===== Smooth Scrolling for Navigation Links =====
@@ -273,29 +270,6 @@ window.addEventListener('scroll', () => {
         heroContent.style.opacity = 1 - (scrolled / 700);
     }
 });
-
-// ===== Cursor Trail Effect (Optional) =====
-let mouseX = 0;
-let mouseY = 0;
-let cursorX = 0;
-let cursorY = 0;
-
-document.addEventListener('mousemove', (e) => {
-    mouseX = e.clientX;
-    mouseY = e.clientY;
-});
-
-function animateCursor() {
-    const diffX = mouseX - cursorX;
-    const diffY = mouseY - cursorY;
-    
-    cursorX += diffX * 0.1;
-    cursorY += diffY * 0.1;
-    
-    requestAnimationFrame(animateCursor);
-}
-
-animateCursor();
 
 // ===== Initialize Animations =====
 document.addEventListener('DOMContentLoaded', () => {
