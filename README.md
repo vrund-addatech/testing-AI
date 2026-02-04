@@ -1,85 +1,97 @@
-# Advanced Developer Portfolio Website 🚀
+# Vrund Patel - Software Development Engineer Portfolio 🚀
 
-A modern, responsive portfolio website designed for developers to showcase their skills, projects, and experience. Built with clean HTML, CSS, and JavaScript.
+A modern, responsive portfolio website showcasing the skills, projects, and professional experience of Vrund Patel, a Software Development Engineer specializing in Full Stack Development, GenAI, and Cloud Technologies.
 
-## ✨ Features
+## 👨‍💻 About
 
-### 🎨 Modern Design
-- **Gradient Color Scheme**: Eye-catching purple to pink gradient throughout the design
-- **Clean Layout**: Professional and intuitive user interface
-- **Smooth Animations**: Engaging scroll animations and hover effects
-- **Floating Icons**: Animated technology icons in the hero section
+**Vrund Patel**
+- 📧 Email: vrundpatel99240@gmail.com
+- 📱 Phone: +91 9737711824
+- 🔗 LinkedIn: [vrund-patel](https://linkedin.com/in/vrund-patel)
+- 💻 Codeforces: [vrund193 (Specialist)](https://codeforces.com/profile/vrund193)
+- 🍳 CodeChef: [vrund297 (Rating: 1797)](https://www.codechef.com/users/vrund297)
+- 🏆 HackerEarth: [vrund297 (Elite level)](https://www.hackerearth.com/@vrund297)
 
-### 🌓 Dark/Light Mode
-- **Theme Toggle**: Easily switch between dark and light themes
-- **Persistent Storage**: Theme preference saved in localStorage
-- **Smooth Transitions**: Seamless theme switching animations
+### Education
+**Nirma University** - B.Tech in Information Technology  
+2017-2021 | Ahmedabad, India | GPA: 7.88/10.0
 
-### 📱 Fully Responsive
-- **Mobile-First Design**: Optimized for all screen sizes
-- **Hamburger Menu**: Mobile-friendly navigation
-- **Flexible Grid Layouts**: Adapts to different devices perfectly
-- **Touch-Friendly**: All interactive elements work great on mobile
+## 💼 Professional Experience
 
-### 🎯 Sections Included
+### Software Development Engineer - Adda Tech Inc., Canada
+*Aug 2022 - Present*
+- Developed GenAI-enabled features with GPT-based SQL generation
+- Optimized database performance with complex T-SQL procedures
+- Achieved 90% reduction in report rendering time through pagination
+- Developed and maintained RESTful APIs
+- Mentored junior developers and conducted code reviews
 
-1. **Hero Section**
-   - Introduction with animated wave emoji
-   - Call-to-action buttons
-   - Social media links
-   - Floating technology icons
+### Software Development Engineer - Searce Inc., India
+*Jan 2021 - Aug 2022*
+- Led backend revamp of onboarding/offboarding modules
+- Provided solutions to 100+ organizations
+- Integrated Microsoft Environment support
 
-2. **About Me**
-   - Professional profile
-   - Statistics showcase (Projects, Experience, Clients)
-   - Personal background
+## 🛠️ Technical Skills
 
-3. **Technical Skills**
-   - Frontend Development skills with progress bars
-   - Backend Development expertise
-   - Tools & Technologies
-   - Animated skill progression
+### Programming Languages
+- Java
+- Python
+- C#
+- T-SQL
 
-4. **Featured Projects**
-   - 6 sample project cards
-   - Hover effects with project details
-   - Technology tags for each project
-   - GitHub and live demo links
+### Technologies & Frameworks
+- Django (Python)
+- Spring Boot
+- GenAI / GPT Integration
+- React.js
+- Microsoft Azure
+- AWS (EC2, S3, etc.)
+- Google Cloud Platform
 
-5. **Contact Section**
-   - Working contact form with validation
-   - Email, phone, and location information
-   - Form submission with loading states
-   - Success notification system
+### Databases
+- MySQL
+- MongoDB
+- NoSQL
+- PostgreSQL
 
-6. **Footer**
-   - Copyright information
-   - Social media links
-   - Professional branding
+### Other Skills
+- Data Structures and Algorithms
+- Agile and Waterfall Methodologies
+- CI/CD
 
-### 🎭 Interactive Features
+## 🚀 Featured Projects
 
-- **Smooth Scrolling**: Navigation links smoothly scroll to sections
-- **Active Link Highlighting**: Current section highlighted in navigation
-- **Form Validation**: Built-in contact form validation
-- **Notification System**: Success messages for form submissions
-- **Parallax Effects**: Hero section parallax on scroll
-- **Project Card Tilt**: 3D tilt effect on project cards
-- **Typing Animation**: Animated subtitle text
+### College Finder
+Mobile-friendly website for students studying abroad with college information, expert assistance, and payment integration.
+- **Tech Stack**: Python, React.js, PostgreSQL, Razor Pay
 
-### 🛠️ Technologies Used
+### Safety App
+Emergency assistance application with minimal button clicks for quick help.
+- **Tech Stack**: Android Studio, Python, Firebase
 
-- **HTML5**: Semantic markup
-- **CSS3**: Modern styling with CSS Grid and Flexbox
-- **JavaScript (ES6+)**: Interactive functionality
-- **Font Awesome 6**: Icon library
-- **Google Fonts**: Inter font family
+### Stock Market Application
+Real-time stock data processing with Apache Kafka.
+- **Tech Stack**: Java, Apache Kafka, Angular.js
+
+## 🏆 Achievements
+
+- **CodeChef**: Rating of 1797 in worldwide contests
+- **HackerEarth**: 48th worldwide rank in Data Structures contest
+- **Codeforces**: Specialist level (vrund193)
+
+## ✨ Website Features
+
+- **Modern Design**: Gradient color scheme with smooth animations
+- **Dark/Light Mode**: Theme toggle with persistent storage
+- **Fully Responsive**: Mobile-first design optimized for all screen sizes
+- **Interactive Elements**: Smooth scrolling, form validation, and notification system
+- **Professional Sections**: Hero, About, Experience, Skills, Projects, and Contact
 
 ## 🚀 Getting Started
 
 ### Prerequisites
 - A modern web browser (Chrome, Firefox, Safari, Edge)
-- A local web server (optional for local development)
 
 ### Installation
 
@@ -96,41 +108,16 @@ python -m http.server 8000
 
 # Using Node.js
 npx serve
-
-# Using PHP
-php -S localhost:8000
 ```
 
 3. Visit `http://localhost:8000` in your browser
 
-## 📝 Customization
+## 🎨 Technologies Used
 
-### Personalizing the Portfolio
-
-1. **Update Personal Information**:
-   - Edit `index.html` to change name, title, and descriptions
-   - Update social media links with your profiles
-   - Modify contact information (email, phone, location)
-
-2. **Customize Colors**:
-   - Open `style.css` and modify CSS variables in `:root`
-   - Change `--primary-color`, `--secondary-color`, `--accent-color`
-
-3. **Add Your Projects**:
-   - Replace project cards in the Projects section
-   - Add your own project images
-   - Update project descriptions and technology tags
-
-4. **Update Skills**:
-   - Modify skill percentages in the Skills section
-   - Add or remove skills as needed
-
-## 🎨 Color Scheme
-
-- **Primary**: `#6366f1` (Indigo)
-- **Secondary**: `#8b5cf6` (Purple)
-- **Accent**: `#ec4899` (Pink)
-- **Gradient**: Linear gradient combining all three colors
+- **HTML5**: Semantic markup
+- **CSS3**: Modern styling with CSS Grid and Flexbox
+- **JavaScript (ES6+)**: Interactive functionality
+- **Font Awesome 6**: Icon library
 
 ## 📱 Browser Support
 
@@ -138,23 +125,20 @@ php -S localhost:8000
 - ✅ Firefox (latest)
 - ✅ Safari (latest)
 - ✅ Edge (latest)
-- ✅ Mobile browsers (iOS Safari, Chrome Mobile)
+- ✅ Mobile browsers
 
 ## 📄 License
 
 This project is open source and available for personal and commercial use.
 
-## 🤝 Contributing
-
-Contributions, issues, and feature requests are welcome!
-
 ## 👨‍💻 Author
 
-**Your Name**
-- Website: [Your Website]
-- GitHub: [@yourusername](https://github.com/yourusername)
-- LinkedIn: [Your LinkedIn](https://linkedin.com/in/yourusername)
+**Vrund Patel**
+- Email: vrundpatel99240@gmail.com
+- LinkedIn: [vrund-patel](https://linkedin.com/in/vrund-patel)
+- CodeChef: [vrund297](https://www.codechef.com/users/vrund297)
+- Codeforces: [vrund193](https://codeforces.com/profile/vrund193)
 
 ---
 
-Made with ❤️ by developers, for developers
+Made with ❤️ by Vrund Patel
