@@ -546,6 +546,81 @@ section {
     font-weight: 500;
 }
 
+/* ===== Experience Section ===== */
+.experience {
+    background: var(--bg-primary);
+}
+
+.experience-timeline {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.experience-item {
+    background: var(--bg-card);
+    padding: var(--spacing-md);
+    border-radius: var(--radius-lg);
+    box-shadow: 0 10px 30px var(--shadow);
+    margin-bottom: var(--spacing-md);
+    border-left: 4px solid transparent;
+    background-image: linear-gradient(var(--bg-card), var(--bg-card)), var(--gradient);
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
+    transition: transform var(--transition-normal);
+}
+
+.experience-item:hover {
+    transform: translateX(10px);
+}
+
+.experience-header {
+    margin-bottom: var(--spacing-sm);
+}
+
+.experience-header h3 {
+    font-size: 1.75rem;
+    color: var(--text-primary);
+    margin-bottom: 0.5rem;
+}
+
+.company {
+    display: inline-block;
+    background: var(--gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-weight: 600;
+    font-size: 1.125rem;
+    margin-right: 1rem;
+}
+
+.duration {
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+}
+
+.experience-details {
+    list-style: none;
+    padding-left: 0;
+}
+
+.experience-details li {
+    color: var(--text-secondary);
+    margin-bottom: 0.75rem;
+    padding-left: 1.5rem;
+    position: relative;
+    line-height: 1.7;
+}
+
+.experience-details li:before {
+    content: "▹";
+    position: absolute;
+    left: 0;
+    color: var(--primary-color);
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
 /* ===== Skills Section ===== */
 .skills-grid {
     display: grid;
