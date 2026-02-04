@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deploy Your Portfolio - Free Options</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: #333;
+            padding: 20px;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+        }
+        h1 {
+            text-align: center;
+            color: #667eea;
+            margin-bottom: 10px;
+            font-size: 2.5em;
+        }
+        .subtitle {
+            text-align: center;
+            color: #666;
+            margin-bottom: 40px;
+            font-size: 1.2em;
+        }
+        .options-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            margin-bottom: 40px;
+        }
+        .option-card {
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            border-radius: 15px;
+            padding: 30px;
+            transition: transform 0.3s, box-shadow 0.3s;
+            border: 3px solid transparent;
+        }
+        .option-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            border-color: #667eea;
+        }
+        .option-card.recommended {
+            background: linear-gradient(135deg, #ffeaa7 0%, #fdcb6e 100%);
+            border-color: #fdcb6e;
+        }
+        .option-title {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+            color: #2d3436;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .badge {
+            background: #00b894;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 20px;
+            font-size: 0.6em;
+            font-weight: bold;
+        }
+        .option-description {
+            color: #636e72;
+            margin-bottom: 20px;
+            font-size: 0.95em;
+        }
+        .features {
+            list-style: none;
+            margin-bottom: 20px;
+        }
+        .features li {
+            padding: 5px 0;
+            padding-left: 25px;
+            position: relative;
+        }
+        .features li:before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: #00b894;
+            font-weight: bold;
+            font-size: 1.2em;
+        }
+        .deploy-button {
+            display: block;
+            width: 100%;
+            padding: 15px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 10px;
+            font-weight: bold;
+            font-size: 1.1em;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .deploy-button:hover {
+            transform: scale(1.05);
+            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+        }
+        .comparison-table {
+            overflow-x: auto;
+            margin: 40px 0;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+        th {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 15px;
+            text-align: left;
+        }
+        td {
+            padding: 15px;
+            border-bottom: 1px solid #dfe6e9;
+        }
+        tr:hover {
+            background: #f8f9fa;
+        }
+        .checkmark {
+            color: #00b894;
+            font-weight: bold;
+            font-size: 1.2em;
+        }
+        .steps {
+            background: #f8f9fa;
+            padding: 30px;
+            border-radius: 15px;
+            margin: 40px 0;
+        }
+        .steps h2 {
+            color: #667eea;
+            margin-bottom: 20px;
+        }
+        .step {
+            padding: 15px 0;
+            border-left: 4px solid #667eea;
+            padding-left: 20px;
+            margin: 20px 0;
+        }
+        .step-number {
+            background: #667eea;
+            color: white;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            margin-right: 10px;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 2px solid #dfe6e9;
+            color: #636e72;
+        }
+        .links {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 30px;
+        }
+        .link-card {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 15px 30px;
+            border-radius: 10px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: transform 0.2s;
+        }
+        .link-card:hover {
+            transform: translateY(-3px);
+        }
+        @media (max-width: 768px) {
+            .container {
+                padding: 20px;
+            }
+            h1 {
+                font-size: 1.8em;
+            }
+            .options-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🚀 Deploy Your Portfolio for FREE</h1>
+        <p class="subtitle">Choose from 5+ free hosting platforms - Deploy in minutes!</p>
+
+        <div class="options-grid">
+            <div class="option-card recommended">
+                <div class="option-title">
+                    GitHub Pages
+                    <span class="badge">EASIEST</span>
+                </div>
+                <p class="option-description">Perfect for beginners - no extra signup required!</p>
+                <ul class="features">
+                    <li>Zero configuration</li>
+                    <li>Free SSL certificate</li>
+                    <li>Unlimited bandwidth</li>
+                    <li>Auto-deploy from GitHub</li>
+                </ul>
+                <a href="#github-steps" class="deploy-button">Deploy with GitHub Pages</a>
+            </div>
+
+            <div class="option-card">
+                <div class="option-title">
+                    Vercel
+                    <span class="badge" style="background: #0070f3;">FASTEST</span>
+                </div>
+                <p class="option-description">Best performance with global CDN</p>
+                <ul class="features">
+                    <li>Lightning-fast builds</li>
+                    <li>Analytics included</li>
+                    <li>Preview deployments</li>
+                    <li>100GB bandwidth/mo</li>
+                </ul>
+                <a href="https://vercel.com/new/clone?repository-url=https://github.com/vrund-addatech/testing-AI" target="_blank" class="deploy-button">Deploy with Vercel</a>
+            </div>
+
+            <div class="option-card">
+                <div class="option-title">
+                    Netlify
+                    <span class="badge" style="background: #00c7b7;">FEATURES</span>
+                </div>
+                <p class="option-description">Great for sites with forms and functions</p>
+                <ul class="features">
+                    <li>Built-in form handling</li>
+                    <li>Split testing</li>
+                    <li>Serverless functions</li>
+                    <li>100GB bandwidth/mo</li>
+                </ul>
+                <a href="https://app.netlify.com/start/deploy?repository=https://github.com/vrund-addatech/testing-AI" target="_blank" class="deploy-button">Deploy with Netlify</a>
+            </div>
+
+            <div class="option-card">
+                <div class="option-title">Cloudflare Pages</div>
+                <p class="option-description">Unlimited bandwidth with powerful CDN</p>
+                <ul class="features">
+                    <li>Truly unlimited bandwidth</li>
+                    <li>DDoS protection</li>
+                    <li>Global edge network</li>
+                    <li>Free SSL</li>
+                </ul>
+                <a href="https://pages.cloudflare.com" target="_blank" class="deploy-button">Deploy with Cloudflare</a>
+            </div>
+
+            <div class="option-card">
+                <div class="option-title">Render</div>
+                <p class="option-description">Simple and reliable hosting</p>
+                <ul class="features">
+                    <li>Easy setup</li>
+                    <li>Auto HTTPS</li>
+                    <li>100GB bandwidth/mo</li>
+                    <li>DDoS protection</li>
+                </ul>
+                <a href="https://render.com" target="_blank" class="deploy-button">Deploy with Render</a>
+            </div>
+        </div>
+
+        <div class="steps" id="github-steps">
+            <h2>📝 GitHub Pages - Quick Setup (2 Minutes)</h2>
+            
+            <div class="step">
+                <span class="step-number">1</span>
+                Go to your repository Settings at: 
+                <code>https://github.com/vrund-addatech/testing-AI/settings</code>
+            </div>
+
+            <div class="step">
+                <span class="step-number">2</span>
+                Click on <strong>"Pages"</strong> in the left sidebar
+            </div>
+
+            <div class="step">
+                <span class="step-number">3</span>
+                Under "Source", select <strong>"main"</strong> branch and <strong>"/ (root)"</strong> folder
+            </div>
+
+            <div class="step">
+                <span class="step-number">4</span>
+                Click <strong>"Save"</strong>
+            </div>
+
+            <div class="step">
+                <span class="step-number">5</span>
+                Wait 1-2 minutes, then visit: 
+                <code>https://vrund-addatech.github.io/testing-AI/</code>
+            </div>
+
+            <div class="step">
+                <span class="step-number">✓</span>
+                <strong>Done! Your site is live! 🎉</strong>
+            </div>
+        </div>
+
+        <div class="comparison-table">
+            <h2 style="text-align: center; margin-bottom: 20px; color: #667eea;">📊 Quick Comparison</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Platform</th>
+                        <th>Setup Time</th>
+                        <th>Bandwidth</th>
+                        <th>Best For</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>GitHub Pages</strong></td>
+                        <td>2 minutes</td>
+                        <td>Unlimited</td>
+                        <td>Beginners</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Vercel</strong></td>
+                        <td>3 minutes</td>
+                        <td>100GB/mo</td>
+                        <td>Performance</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Netlify</strong></td>
+                        <td>3 minutes</td>
+                        <td>100GB/mo</td>
+                        <td>Features</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Cloudflare</strong></td>
+                        <td>5 minutes</td>
+                        <td>Unlimited</td>
+                        <td>High Traffic</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Render</strong></td>
+                        <td>3 minutes</td>
+                        <td>100GB/mo</td>
+                        <td>Simplicity</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="links">
+            <a href="DEPLOYMENT.md" class="link-card">📖 Full Deployment Guide</a>
+            <a href="QUICK-DEPLOY.md" class="link-card">⚡ Quick Deploy Instructions</a>
+            <a href="VISUAL-DEPLOYMENT-GUIDE.md" class="link-card">📸 Visual Guide with Screenshots</a>
+            <a href="HOSTING-COMPARISON.md" class="link-card">📊 Detailed Comparison</a>
+        </div>
+
+        <div class="footer">
+            <p>✅ All options are <strong>100% FREE</strong> for personal portfolios</p>
+            <p>✅ All include <strong>free SSL certificates</strong> (HTTPS)</p>
+            <p>✅ All support <strong>custom domains</strong></p>
+            <p>✅ All have <strong>automatic deployments</strong> from GitHub</p>
+            <p style="margin-top: 20px;">Made with ❤️ by Vrund Patel</p>
+        </div>
+    </div>
+</body>
+</html>
