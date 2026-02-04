@@ -112,6 +112,39 @@ npx serve
 
 3. Visit `http://localhost:8000` in your browser
 
+## 🌐 Free Deployment Options
+
+This portfolio can be deployed **completely FREE** on multiple platforms! 🎉
+
+### Quick Deploy Options:
+
+#### 🟢 **GitHub Pages** (Recommended - Easiest)
+1. Go to repository **Settings** → **Pages**
+2. Select **main** branch and **/ (root)** folder
+3. Click **Save**
+4. Visit: `https://vrund-addatech.github.io/testing-AI/`
+
+#### 🔷 **Vercel** (Best Performance)
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/vrund-addatech/testing-AI)
+
+#### 🌐 **Netlify** (Feature-Rich)
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/vrund-addatech/testing-AI)
+
+#### 📘 **Full Deployment Guide**
+For detailed instructions on all deployment options, see **[DEPLOYMENT.md](./DEPLOYMENT.md)** which includes:
+- 5+ free hosting platforms (GitHub Pages, Vercel, Netlify, Render, Cloudflare Pages)
+- Step-by-step deployment guides
+- Comparison table of features
+- Troubleshooting tips
+- Custom domain setup
+
+All options include:
+- ✅ Free hosting forever
+- ✅ Automatic SSL certificates (HTTPS)
+- ✅ Custom domain support
+- ✅ Automatic deployments from GitHub
+- ✅ Global CDN for fast loading
+
 ## 🎨 Technologies Used
 
 - **HTML5**: Semantic markup
